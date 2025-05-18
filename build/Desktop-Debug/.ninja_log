@@ -1,0 +1,25 @@
+# ninja log v6
+22	665	7692542479380157	AlgorithmVisualizer_autogen/timestamp	f6b93bf5c8dabbbd
+22	665	7692542479380157	AlgorithmVisualizer_autogen/mocs_compilation.cpp	f6b93bf5c8dabbbd
+22	665	7692542479380157	C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/AlgorithmVisualizer_autogen/timestamp	f6b93bf5c8dabbbd
+22	665	7692542479380157	C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/AlgorithmVisualizer_autogen/mocs_compilation.cpp	f6b93bf5c8dabbbd
+690	3995	7692542480810815	CMakeFiles/AlgorithmVisualizer.dir/AlgorithmVisualizer_autogen/mocs_compilation.cpp.obj	11f7f17cab97e122
+699	4111	7692542480881818	CMakeFiles/AlgorithmVisualizer.dir/main.cpp.obj	88fdca7f44fa33da
+707	4205	7692542481039351	CMakeFiles/AlgorithmVisualizer.dir/mainwindow.cpp.obj	f8d2356891201779
+4206	4720	7692542515951927	AlgorithmVisualizer.exe	713da2e07a42fa21
+126	863	7692549398617780	AlgorithmVisualizer_autogen/timestamp	f6b93bf5c8dabbbd
+126	863	7692549398617780	AlgorithmVisualizer_autogen/mocs_compilation.cpp	f6b93bf5c8dabbbd
+126	863	7692549398617780	C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/AlgorithmVisualizer_autogen/timestamp	f6b93bf5c8dabbbd
+126	863	7692549398617780	C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/AlgorithmVisualizer_autogen/mocs_compilation.cpp	f6b93bf5c8dabbbd
+866	4793	7692549400071082	CMakeFiles/AlgorithmVisualizer.dir/AlgorithmVisualizer_autogen/mocs_compilation.cpp.obj	11f7f17cab97e122
+880	4806	7692549400209864	CMakeFiles/AlgorithmVisualizer.dir/main.cpp.obj	88fdca7f44fa33da
+890	5059	7692549400305574	CMakeFiles/AlgorithmVisualizer.dir/mainwindow.cpp.obj	f8d2356891201779
+5059	5446	7692549441980704	AlgorithmVisualizer.exe	713da2e07a42fa21
+73	687	7692551543348696	AlgorithmVisualizer_autogen/timestamp	f6b93bf5c8dabbbd
+73	687	7692551543348696	AlgorithmVisualizer_autogen/mocs_compilation.cpp	f6b93bf5c8dabbbd
+73	687	7692551543348696	C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/AlgorithmVisualizer_autogen/timestamp	f6b93bf5c8dabbbd
+73	687	7692551543348696	C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/AlgorithmVisualizer_autogen/mocs_compilation.cpp	f6b93bf5c8dabbbd
+689	4251	7692551544514739	CMakeFiles/AlgorithmVisualizer.dir/AlgorithmVisualizer_autogen/mocs_compilation.cpp.obj	11f7f17cab97e122
+707	4650	7692551544674675	CMakeFiles/AlgorithmVisualizer.dir/mainwindow.cpp.obj	f8d2356891201779
+698	4666	7692551544574759	CMakeFiles/AlgorithmVisualizer.dir/main.cpp.obj	88fdca7f44fa33da
+4666	4948	7692551584289478	AlgorithmVisualizer.exe	713da2e07a42fa21

@@ -1,0 +1,8 @@
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/AlgorithmVisualizer.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/install.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/install/local.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/AlgorithmVisualizer_autogen_timestamp_deps.dir
+C:/Users/atuck/OneDrive/Documents/MyFiles/MyQtProjects/AlgorithmVisualizer/build/Desktop-Debug/CMakeFiles/AlgorithmVisualizer_autogen.dir
