@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QGraphicsRectItem>
-#include <QGraphicsTextItem>
+#include <QPropertyAnimation>
+#include "animatedrectitem.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,13 +19,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void onButtonClicked(); //5/17
+    //void animateRectMove(QGraphicsItem* item, QPointF newPos);
 
 private:
     Ui::MainWindow *ui;
-    //5/19
-    QVector<QGraphicsRectItem*> rects;
-    QVector<QGraphicsTextItem*> labels;
-    QVector<int> values = {5, 2, 8, 1, 4};
+    QVector<int> values = {5, 2, 8, 1, 4}; //for insertion sort and labeling rectangles
+     QVector<AnimatedRectItem*> items;
     int sortIndex = 1; //Start from 1 like in insertion sort
+
+    AnimatedRectItem *highlightedItem = nullptr;
+    AnimatedRectItem *comparedItem = nullptr;
+
+
 };
 #endif // MAINWINDOW_H

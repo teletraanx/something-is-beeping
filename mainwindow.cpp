@@ -1,10 +1,11 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "animatedrectitem.h"
+#include <QPropertyAnimation>
 #include <QMessageBox> //5/17
 #include <QGraphicsScene>
-#include <QGraphicsRectItem>
-#include <QGraphicsTextItem>
 #include <QFont>
+#include <QPropertyAnimation>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::onButtonClicked); //5/17 Connects onButtonClicked() to the UI
 
+    //----------for drawing 5 rectangles and numbering them--------------
     QGraphicsScene *scene = new QGraphicsScene(this); //5/19 also dragged a Graphics View into the UI
     ui->graphicsView->setScene(scene); //5/19
 
@@ -22,20 +24,26 @@ MainWindow::MainWindow(QWidget *parent)
     for (int i = 0; i < 5; ++i)
     {
         int x = i * 60;
-        QGraphicsRectItem * rect = scene->addRect(x, 0, 50, 50, QPen(Qt::black), QBrush(Qt::lightGray));
-        rects.append(rect);
 
-        QGraphicsTextItem *label = scene->addText(QString::number(values[i]), font);
-        label->setDefaultTextColor(Qt::black);
+        // Create our custom animated rect item
+        AnimatedRectItem *item = new AnimatedRectItem(QRectF(0, 0, 50, 50));
+        item->setPos(x, 0);
 
-        QRectF rectBounds = rect->rect();
-        QRectF textBounds = label->boundingRect();
-        label->setPos(x + (rectBounds.width() - textBounds.width()) / 2,
-                      (rectBounds.height() - textBounds.height()) /2);
+        item->setBrush(Qt::lightGray);
+        item->setPen(QPen(Qt::black));
 
-        labels.append(label);
+        // Set the label
+        item->label->setPlainText(QString::number(values[i]));
+        item->label->setDefaultTextColor(Qt::black);
+        item->label->setFont(font);
+
+        QRectF textBounds = item->label->boundingRect();
+        item->label->setPos((50 - textBounds.width()) / 2,
+                            (50 - textBounds.height()) / 2);
+
+        scene->addItem(item);
+        items.append(item);
     }
-    //5/19^
 }
 
 MainWindow::~MainWindow()
@@ -47,7 +55,7 @@ MainWindow::~MainWindow()
 void MainWindow::onButtonClicked() { //5/17 also dragged button into UI
     //QMessageBox::information(this, "Hello World!", "You clicked the button!"); //Opens a message box called "Hello World!" with the message "You..."
 
-    //5/19
+    //5/19--------Insertion Sort-----------
     if (sortIndex >= values.size()) {
         QMessageBox::information(this, "Done", "Insertion sort complete!");
         return;
@@ -56,7 +64,21 @@ void MainWindow::onButtonClicked() { //5/17 also dragged button into UI
     int key = values[sortIndex];
     int j = sortIndex - 1;
 
-    while (j >= 0 && values[j] > key) {
+    //clear previous highlights
+    if (highlightedItem) highlightedItem->setBrush(Qt::lightGray);
+    if (comparedItem) comparedItem->setBrush(Qt::lightGray);
+
+    //highlight current key
+    highlightedItem = items[sortIndex];
+    highlightedItem->setBrush(Qt::green); //key being inserted
+
+    //highlight comparison (if in bounds)
+    if (j >= 0) {
+        comparedItem = items[j];
+        comparedItem->setBrush(Qt::yellow); //being compared
+    }
+
+    while (j >= 0 && values[j] > key) { //perform the sort step (full insertion step per click)
         values[j + 1] = values[j];
         j--;
     }
@@ -64,13 +86,19 @@ void MainWindow::onButtonClicked() { //5/17 also dragged button into UI
 
     // Update visuals
     for (int i = 0; i < values.size(); ++i) {
-        labels[i]->setPlainText(QString::number(values[i]));
+        AnimatedRectItem *item = items[i];
+        item->label->setPlainText(QString::number(values[i]));
 
-        QRectF textBounds = labels[i]->boundingRect();
-        labels[i]->setPos(i * 60 + (50 - textBounds.width()) / 2,
-                          (50 - textBounds.height()) / 2);
-        rects[i]->setRect(i * 60, 0, 50, 50);
+        QRectF textBounds = item->label->boundingRect();
+        item->label->setPos((50 - textBounds.width()) / 2,
+                            (50 - textBounds.height()) / 2);
+
+        QPointF newPos(i * 60, 0);
+        QPropertyAnimation *animation = new QPropertyAnimation(item, QByteArray("pos"));
+        animation->setDuration(300);
+        animation->setEndValue(newPos);
+        animation->start(QAbstractAnimation::DeleteWhenStopped);
     }
-
     sortIndex++;
 }
+

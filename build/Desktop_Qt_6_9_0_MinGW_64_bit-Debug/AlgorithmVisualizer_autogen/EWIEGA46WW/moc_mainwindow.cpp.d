@@ -1,5 +1,7 @@
 C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/AlgorithmVisualizer_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/mainwindow.h \
   C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/AlgorithmVisualizer_autogen/moc_predefs.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
@@ -7,6 +9,7 @@ C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20utility.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qarraydata.h \
@@ -35,6 +38,7 @@ C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qflags.h \
@@ -71,6 +75,7 @@ C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9
   C:/Qt/6.9.0/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qscopedpointer.h \
@@ -121,6 +126,7 @@ C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9
   C:/Qt/6.9.0/mingw_64/include/QtCore/qtypes.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qxptype_traits.h \
@@ -163,6 +169,7 @@ C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/build/Desktop_Qt_6_9
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
+  C:/Qt/MyQtProjects/AlgorithmVisualizer/something-is-beeping/animatedrectitem.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
