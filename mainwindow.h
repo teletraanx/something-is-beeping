@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsRectItem>
+#include <QGraphicsTextItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,5 +22,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    //5/19
+    QVector<QGraphicsRectItem*> rects;
+    QVector<QGraphicsTextItem*> labels;
+    QVector<int> values = {5, 2, 8, 1, 4};
+    int sortIndex = 1; //Start from 1 like in insertion sort
 };
 #endif // MAINWINDOW_H
